@@ -9,8 +9,8 @@ app.use(cors({
     credential:true
 }))
 
-app.use(express.json({limit:"20kb"}))
-app.use(express.urlencoded({extended:true , limit:"20kb"}));
+app.use(express.json({limit:"200kb"}))
+app.use(express.urlencoded({extended:true , limit:"200kb"}));
 app.use(express.static("public"))
 app.use (cookieParser())
 

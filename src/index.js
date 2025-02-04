@@ -14,7 +14,7 @@ connectDB()
         console.log("errrors: ", error);
         throw error
     })
-    app.listen(process.env.PORT ||8000, ()=>{
+    app.listen(process.env.PORT || 8000 , ()=>{
         console.log(`Server is running on port ${process.env.PORT}`)  // `process.env.PORT` is automatically set by Herok
     })
 })
